@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ciencia en Acción | ADN, Energía y Materia</title>
+<style>
+:root{--navy:#14213d;--blue:#2563eb;--cyan:#06b6d4;--purple:#7c3aed;--green:#059669;--orange:#ea580c;--bg:#f3f7ff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#1f2937;line-height:1.6}
+header{background:linear-gradient(120deg,#14213d,#2563eb,#06b6d4);color:white;text-align:center;padding:52px 20px}
+header h1{font-size:clamp(2rem,6vw,3.4rem);margin:0 0 12px}
+header p{font-size:1.1rem;max-width:700px;margin:auto}
+nav{position:sticky;top:0;background:#fff;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:12px;box-shadow:0 3px 12px #0001;z-index:5}
+nav a{color:#14213d;text-decoration:none;font-weight:bold;padding:8px 12px;border-radius:20px}
+nav a:hover{background:#dbeafe;color:#2563eb}
+main{max-width:1050px;margin:28px auto;padding:0 16px}
+.intro{text-align:center;padding:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:white;border-radius:18px;padding:22px;box-shadow:0 6px 18px #14213d12;border-top:5px solid var(--accent)}
+.card h2{color:var(--accent);margin-top:0}
+.symbol{font-size:2.2rem}
+.card h3{margin-bottom:5px;color:#14213d}
+.fact{background:#f1f5f9;border-radius:10px;padding:12px;margin-top:12px}
+.quiz{background:#14213d;color:white;border-radius:18px;padding:25px;margin:30px 0}
+.quiz h2{margin-top:0}
+.quiz button{display:block;width:100%;text-align:left;margin:9px 0;padding:12px;border:0;border-radius:10px;background:white;color:#14213d;font-size:1rem;cursor:pointer}
+.quiz button:hover{background:#dbeafe}
+#result{font-weight:bold;margin-top:12px;min-height:28px}
+footer{text-align:center;padding:24px;background:#14213d;color:white;margin-top:35px}
+</style>
+</head>
+<body>
+<header>
+  <h1>🔬 Ciencia en Acción</h1>
+  <p>Explora los secretos de la vida, la energía y la materia: ADN, calor, temperatura, humedad y enlaces químicos.</p>
+</header>
+<nav>
+  <a href="#adn">ADN</a><a href="#calor">Calor</a><a href="#temperatura">Temperatura</a><a href="#humedad">Humedad</a><a href="#enlaces">Enlaces químicos</a><a href="#quiz">Mini quiz</a>
+</nav>
+<main>
+<section class="intro">
+  <h2>¡Bienvenido al mundo de la ciencia!</h2>
+  <p>La ciencia nos ayuda a comprender cómo funcionan los seres vivos y cómo se comporta la materia en nuestro entorno.</p>
+</section>
+<section class="cards">
+<article class="card" id="adn" style="--accent:#7c3aed">
+  <div class="symbol">🧬</div><h2>ADN</h2>
+  <p>El <b>ácido desoxirribonucleico (ADN)</b> es una molécula que contiene la información genética de los seres vivos. Esa información participa en el desarrollo y funcionamiento de los organismos.</p>
+  <h3>¿Cómo es?</h3><p>Tiene forma de doble hélice, parecida a una escalera retorcida. Sus bases son adenina (A), timina (T), citosina (C) y guanina (G).</p>
+  <div class="fact"><b>Dato curioso:</b> En el ADN, la adenina se une con la timina y la citosina con la guanina.</div>
+</article>
+<article class="card" id="calor" style="--accent:#ea580c">
+  <div class="symbol">🔥</div><h2>Calor</h2>
+  <p>El <b>calor</b> es energía que se transfiere de un cuerpo más caliente a otro más frío debido a una diferencia de temperatura.</p>
+  <h3>Formas de transferencia</h3><p><b>Conducción:</b> por contacto. <b>Convección:</b> mediante el movimiento de líquidos o gases. <b>Radiación:</b> por ondas electromagnéticas.</p>
+  <div class="fact"><b>Ejemplo:</b> Una cuchara metálica se calienta al dejarla dentro de una bebida caliente.</div>
+</article>
+<article class="card" id="temperatura" style="--accent:#2563eb">
+  <div class="symbol">🌡️</div><h2>Temperatura</h2>
+  <p>La <b>temperatura</b> indica qué tan caliente o frío está un cuerpo. Se relaciona con la energía cinética promedio de las partículas.</p>
+  <h3>¿Cómo se mide?</h3><p>Se mide con un termómetro. Las escalas más conocidas son Celsius (°C), Fahrenheit (°F) y Kelvin (K).</p>
+  <div class="fact"><b>Ejemplo:</b> La temperatura corporal suele estar cerca de 37 °C, aunque puede variar.</div>
+</article>
+<article class="card" id="humedad" style="--accent:#0891b2">
+  <div class="symbol">💧</div><h2>Humedad</h2>
+  <p>La <b>humedad</b> es la cantidad de vapor de agua presente en el aire o en un material.</p>
+  <h3>Humedad relativa</h3><p>Se expresa en porcentaje (%) e indica cuánto vapor de agua contiene el aire en comparación con el máximo que podría contener a esa temperatura.</p>
+  <div class="fact"><b>Ejemplo:</b> En un día húmedo, la ropa puede tardar más en secarse.</div>
+</article>
+<article class="card" id="enlaces" style="--accent:#059669">
+  <div class="symbol">⚛️</div><h2>Enlaces químicos</h2>
+  <p>Los <b>enlaces químicos</b> son fuerzas que mantienen unidos a los átomos para formar moléculas o compuestos.</p>
+  <h3>Tipos principales</h3><p><b>Iónico:</b> se transfieren electrones. <b>Covalente:</b> se comparten electrones. <b>Metálico:</b> los átomos metálicos se mantienen unidos por electrones móviles.</p>
+  <div class="fact"><b>Ejemplo:</b> En el agua (H₂O), los átomos de hidrógeno y oxígeno están unidos mediante enlaces covalentes.</div>
+</article>
+</section>
+<section class="quiz" id="quiz">
+  <h2>🧠 Mini quiz científico: 15 preguntas</h2>
+  <p>Responde cada pregunta y comprueba cuánto aprendiste.</p>
+  <div id="quiz-area"></div>
+  <button id="check-btn" onclick="checkQuiz()">Comprobar respuestas</button>
+  <div id="result" aria-live="polite"></div>
+</section>
+</main>
+<footer>🌎 Aprende, pregunta y descubre. ¡La ciencia está en todas partes!</footer>
+<script>
+const questions = [
+ {q:"¿Qué molécula contiene la información genética de los seres vivos?",opts:["ADN","Agua","Oxígeno"],a:0,ex:"El ADN contiene la información genética."},
+ {q:"¿Qué forma tiene normalmente la estructura del ADN?",opts:["Círculo plano","Doble hélice","Cubo"],a:1,ex:"El ADN tiene forma de doble hélice."},
+ {q:"¿Qué base del ADN se empareja con la adenina (A)?",opts:["Citosina (C)","Guanina (G)","Timina (T)"],a:2,ex:"La adenina se empareja con la timina."},
+ {q:"¿Qué es el calor?",opts:["Transferencia de energía por diferencia de temperatura","Una medida de humedad","Una sustancia"],a:0,ex:"El calor es energía que se transfiere entre cuerpos."},
+ {q:"¿Hacia dónde se transfiere espontáneamente el calor?",opts:["Del frío al caliente","Del más caliente al más frío","No se transfiere"],a:1,ex:"El calor fluye espontáneamente del cuerpo más caliente al más frío."},
+ {q:"¿Cuál es una forma de transferencia de calor por contacto directo?",opts:["Radiación","Conducción","Evaporación"],a:1,ex:"La conducción ocurre mediante contacto entre partículas."},
+ {q:"¿Qué instrumento mide la temperatura?",opts:["Termómetro","Barómetro","Regla"],a:0,ex:"La temperatura se mide con un termómetro."},
+ {q:"¿Cuál es una escala de temperatura?",opts:["Metro","Litro","Celsius"],a:2,ex:"Celsius (°C) es una escala de temperatura."},
+ {q:"¿A qué se relaciona la temperatura de una sustancia?",opts:["Con la energía cinética promedio de sus partículas","Con su color únicamente","Con su forma"],a:0,ex:"La temperatura se relaciona con la energía cinética promedio de las partículas."},
+ {q:"¿Qué significa humedad del aire?",opts:["Cantidad de polvo","Presencia de vapor de agua","Cantidad de luz"],a:1,ex:"La humedad describe el vapor de agua presente en el aire."},
+ {q:"¿En qué unidad suele expresarse la humedad relativa?",opts:["Porcentaje (%)","Kilómetros","Grados de longitud"],a:0,ex:"La humedad relativa se expresa en porcentaje."},
+ {q:"¿Qué puede ocurrir cuando el aire tiene mucha humedad?",opts:["La ropa puede tardar más en secarse","El aire no contiene agua","Siempre hace más frío"],a:0,ex:"La alta humedad puede ralentizar el secado de la ropa."},
+ {q:"¿Qué es un enlace químico?",opts:["Una fuerza que une átomos","Un tipo de termómetro","Una medida de temperatura"],a:0,ex:"Los enlaces químicos mantienen unidos a los átomos."},
+ {q:"En un enlace covalente, los átomos…",opts:["Comparten electrones","Siempre pierden todos sus protones","No interactúan"],a:0,ex:"Los enlaces covalentes se forman al compartir electrones."},
+ {q:"¿Qué tipo de enlace suele formarse por transferencia de electrones?",opts:["Covalente","Iónico","Metálico"],a:1,ex:"El enlace iónico implica transferencia de electrones y atracción entre iones."}
+];
+function renderQuiz(){
+ const area=document.getElementById('quiz-area');
+ area.innerHTML=questions.map((item,i)=>`<div class="question" style="margin:18px 0;padding:14px;background:#ffffff12;border-radius:12px">
+ <p><b>${i+1}. ${item.q}</b></p>
+ ${item.opts.map((opt,j)=>`<label style="display:block;margin:8px 0;cursor:pointer"><input type="radio" name="q${i}" value="${j}"> ${opt}</label>`).join('')}
+ <div id="ex${i}" style="margin-top:8px"></div></div>`).join('');
+}
+function checkQuiz(){
+ let score=0;
+ questions.forEach((item,i)=>{
+  const selected=document.querySelector(`input[name="q${i}"]:checked`);
+  const feedback=document.getElementById(`ex${i}`);
+  if(selected && Number(selected.value)===item.a){score++;feedback.textContent="✅ ¡Correcto! "+item.ex;feedback.style.color="#86efac";}
+  else {feedback.textContent="❌ "+(selected?"Respuesta incorrecta. ":"Sin responder. ")+ "Respuesta: "+item.opts[item.a]+". "+item.ex;feedback.style.color="#fecaca";}
+ });
+ const result=document.getElementById('result');
+ result.textContent=`Tu resultado: ${score} de ${questions.length} (${Math.round(score/questions.length*100)}%).`;
+}
+renderQuiz();
+</script>
+</body>
+</html>
